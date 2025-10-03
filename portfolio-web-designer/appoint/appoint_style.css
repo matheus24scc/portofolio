@@ -1,0 +1,203 @@
+:root {
+    --appoint-primary: #28a745; /* Verde */
+    --appoint-secondary: #f8f9fa;
+    --appoint-text: #495057;
+    --appoint-headings: #212529;
+    --appoint-background: #ffffff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: var(--appoint-background);
+    color: var(--appoint-text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Header */
+.appoint-header {
+    background-color: var(--appoint-background);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.appoint-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appoint-header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--appoint-headings);
+    text-decoration: none;
+}
+
+.btn-header {
+    background-color: var(--appoint-primary);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-header:hover {
+    background-color: #218838;
+}
+
+/* Hero Section */
+#hero {
+    padding: 5rem 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    color: var(--appoint-headings);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.download-buttons a {
+    background-color: var(--appoint-headings);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.download-buttons a:hover {
+    background-color: #000;
+}
+
+.hero-image {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+
+/* Features Section */
+#features {
+    background-color: var(--appoint-secondary);
+    padding: 5rem 0;
+}
+
+#features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--appoint-headings);
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--appoint-background);
+    padding: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: var(--appoint-headings);
+    margin-bottom: 1rem;
+}
+
+/* How it Works Section */
+#how-it-works {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#how-it-works h2 {
+    font-size: 2.5rem;
+    color: var(--appoint-headings);
+    margin-bottom: 3rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.step {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.step span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: var(--appoint-primary);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem;
+}
+
+/* Footer */
+.appoint-footer {
+    background-color: var(--appoint-headings);
+    color: #f8f9fa;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.appoint-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.back-to-portfolio {
+    color: var(--appoint-primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-portfolio:hover {
+    text-decoration: underline;
+}

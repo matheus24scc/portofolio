@@ -1,0 +1,247 @@
+:root {
+    --cor-primaria: #0a0a0a;
+    --cor-secundaria: #f5f5f5;
+    --cor-destaque: #007bff;
+    --cor-texto: #333;
+    --cor-fundo: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-fundo);
+    padding: 1rem 5%;
+    border-bottom: 1px solid var(--cor-secundaria);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+main > section {
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+main > section:nth-child(even) {
+    background-color: var(--cor-secundaria);
+}
+
+#inicio .inicio-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#inicio h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: var(--cor-destaque);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#sobre .sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#sobre .sobre-texto {
+    flex: 2;
+}
+
+#sobre h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#sobre .sobre-imagem {
+    flex: 1;
+}
+
+#sobre .sobre-imagem img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#projetos h2 {
+    margin-bottom: 3rem;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background: var(--cor-fundo);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.projeto-card img {
+    width: 100%;
+    display: block;
+}
+
+.projeto-card h3 {
+    padding: 1rem 1.5rem 0.5rem;
+}
+
+.projeto-card p {
+    padding: 0 1.5rem 1.5rem;
+}
+
+#contato h2 {
+    margin-bottom: 1rem;
+}
+
+#contato p {
+    margin-bottom: 2rem;
+}
+
+#contato .email-link {
+    font-size: 1.5rem;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contato .social-links {
+    margin-top: 2rem;
+}
+
+#contato .social-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+#contato .social-links a:hover {
+    color: var(--cor-destaque);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 5%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sobre .sobre-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sobre .sobre-texto {
+        margin-bottom: 2rem;
+    }
+
+    nav ul {
+        display: none; /* Simplificando para o exemplo, poderia ser um menu hamburguer */
+    }
+}
+
+/* Estilos para o card de projeto clicável */
+.projeto-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projeto-card.clickable {
+    position: relative;
+    padding-bottom: 4rem; /* Espaço para o botão */
+}
+
+.projeto-card.clickable .ver-projeto-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-destaque);
+    transition: color 0.3s ease;
+}
+
+.projeto-link:hover .ver-projeto-btn {
+    text-decoration: underline;
+}

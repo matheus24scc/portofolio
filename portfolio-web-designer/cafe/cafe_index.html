@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aconchego - Sabor e Tradição</title>
+    <link rel="stylesheet" href="cafe_style.css">
+</head>
+<body>
+    <header class="cafe-header">
+        <div class="container">
+            <a href="#inicio" class="logo">Café Aconchego</a>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Onde cada xícara conta uma história.</h1>
+                <p>Cafés especiais, doces artesanais e um ambiente acolhedor esperam por você.</p>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container about-content">
+                <div class="about-image">
+                    <img src="http://placeimg.com/500/400/arch/sepia" alt="Interior do Café Aconchego">
+                </div>
+                <div class="about-text">
+                    <h2>Nossa Paixão pelo Café</h2>
+                    <p>O Café Aconchego nasceu do sonho de criar um lugar onde as pessoas pudessem fazer uma pausa na rotina e apreciar um café de alta qualidade. Nossos grãos são selecionados e torrados localmente, garantindo um sabor único a cada xícara.</p>
+                    <p>Venha nos visitar e sinta-se em casa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <div class="container">
+                <h2>Nosso Cardápio</h2>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-item">
+                        <h3>Espresso Duplo</h3>
+                        <p>Intenso e aromático, a base de um bom café.</p>
+                        <span class="price">R$ 8,00</span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-item">
+                        <h3>Capuccino Cremoso</h3>
+                        <p>Espresso, leite vaporizado e uma pitada de chocolate.</p>
+                        <span class="price">R$ 12,00</span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-item">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Com cobertura de brigadeiro artesanal.</p>
+                        <span class="price">R$ 10,00</span>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="menu-item">
+                        <h3>Pão de Queijo</h3>
+                        <p>Porção com 6 unidades, quentinho e delicioso.</p>
+                        <span class="price">R$ 9,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Visite-nos</h2>
+                <p>Rua das Flores, 123 - Centro</p>
+                <p>Segunda a Sábado, das 9h às 19h</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cafe-footer">
+        <div class="container">
+            <p>&copy; 2025 Café Aconchego. Um projeto de portfólio de Matheus Gabriel Schveitzer.</p>
+            <a href="../index.html" class="back-to-portfolio">&#8592; Voltar ao Portfólio Principal</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
