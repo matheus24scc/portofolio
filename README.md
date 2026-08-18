@@ -59,3 +59,12 @@ python3 -m http.server -d portfolio-web-designer 8000
 ## Licença
 
 Veja [LICENSE](LICENSE).
+
+## Status (checkup 2026-08-18)
+> Revisado na campanha de repo-checkup. Relatorio completo: `~/repo-checkup/reports/portofolio.md` (local do mantenedor, nao no repo).
+- **Build/Install**: N/A — site estático (HTML/CSS/JS puro); sem `package.json`/`pyproject.toml`/`go.mod`/`Dockerfile`/`Makefile`.
+- **Smoke test**: N/A — não há suíte de testes; validado por checagens estáticas (parse de HTML/tag balance em todos os `.html` e links locais — todos resolvem).
+- **Para rodar de ponta-a-ponta precisa de**: nenhum serviço externo (abrir `index.html` no navegador ou `python3 -m http.server`).
+- **Inconsistencias conhecidas (README vs codigo)**: nenhuma.
+- **Seguranca**: sem vulns altas remediadas automaticamente (varredura de segredos PASS; nenhum segredo encontrado).
+- **Estado resumido**: site estático funcional; sem build nem serviços externos; secret scan PASS.
