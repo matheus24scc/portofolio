@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portofolio"
+version = "0.1.0"
+description = "portofolio (zero-dep)"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+portofolio = "portofolio.cli:main"
+
+[tool.setuptools]
+packages = ["portofolio"]

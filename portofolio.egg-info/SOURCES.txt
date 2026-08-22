@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+portofolio/__init__.py
+portofolio/cli.py
+portofolio/core.py
+portofolio.egg-info/PKG-INFO
+portofolio.egg-info/SOURCES.txt
+portofolio.egg-info/dependency_links.txt
+portofolio.egg-info/entry_points.txt
+portofolio.egg-info/top_level.txt
+tests/test_portofolio.py
